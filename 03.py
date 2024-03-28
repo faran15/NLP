@@ -2,6 +2,8 @@ import nltk
 from nltk import word_tokenize
 from nltk.corpus import wordnet
 from nltk.stem import WordNetLemmatizer
+nltk.download('punkt')
+nltk.download('wordnet')
 text = "The quick brown foxes jumped over the lazy dogs."
 tokens = word_tokenize(text)
 lemmatizer = WordNetLemmatizer()
